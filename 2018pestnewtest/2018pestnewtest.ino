@@ -1,3 +1,4 @@
+//ir沒遮斷 == HIGH
 int bcc1 = 4;
 int bcc2 = 5;
 int bcc3 = 7;
