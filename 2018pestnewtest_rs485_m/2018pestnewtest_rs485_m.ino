@@ -1,4 +1,3 @@
-
 //ir沒遮斷 == HIGH
 //for arduino nano
 #include <SoftwareSerial.h> 
@@ -24,7 +23,7 @@ unsigned int pestsum = 0;
 
 void setup() {
 Serial.begin(9600);   
-Serial.println("SerialRemote");  // Can be ignored     
+//Serial.println("SerialRemote");  // Can be ignored     
 pinMode(Pin12LED, OUTPUT);    
 pinMode(SSerialTxControl, OUTPUT);      
 digitalWrite(SSerialTxControl, RS485Receive);  // Init Transceiver     
@@ -54,6 +53,7 @@ else
   mode1 = 0;
   digitalWrite(LED1, LOW);
   ch1++;
+  delay(t);
 }
 
 if (digitalRead(bcc2) == HIGH)
@@ -66,6 +66,7 @@ else
   mode2 = 0;
   digitalWrite(LED2, LOW);
   ch2++;
+  delay(t);
 }
 
 if (digitalRead(bcc3) == HIGH)
@@ -78,25 +79,36 @@ else
   mode3 = 0;
   digitalWrite(LED3, LOW);
   ch3++;
+  delay(t);
 }
 
 pestsum = ch1+ch2+ch3;
 
 //Copy input data to output    
+
+//digitalWrite(Pin12LED, HIGH);  // Show activity
+
+byteSend = pestsum;
+
+digitalWrite(Pin12LED, HIGH);  // Show activity
+digitalWrite(SSerialTxControl, RS485Transmit);  // Enable RS485 Transmit   
+RS485Serial.write(byteSend);          // Send byte to Remote Arduino
+digitalWrite(Pin12LED, LOW);  // Show activity    
+delay(10);
+digitalWrite(SSerialTxControl, RS485Receive);  // Disable RS485 Transmit  
+
+Serial.print("byteSend:");
+Serial.println(byteSend);
+
 if (RS485Serial.available())    
 {     
-  pestsum = byteSend;
-  //////////////////////////////////
-  byteSend = RS485Serial.read();   // Read the byte        
-  digitalWrite(Pin12LED, HIGH);  // Show activity     
-  delay(10);      
-  digitalWrite(Pin12LED, LOW);        
-  
-  digitalWrite(SSerialTxControl, RS485Transmit);  // Enable RS485 Transmit      
-  RS485Serial.write(byteSend); // Send the byte back     
-  delay(10);      
-  //digitalWrite(SSerialTxControl, RS485Receive);  // Disable RS485 Transmit  
-  //delay(100); // End If RS485SerialAvailable   
+Serial.println("RS485Serial.available!");
+digitalWrite(Pin12LED, HIGH);  // Show activity
+Serial.print("byteSend:");
+Serial.print(byteSend);
+Serial.println();
+delay(10);
+digitalWrite(Pin12LED, LOW);  // Show activity           
 }
 
 /*Serial.print("ch1:");
@@ -108,5 +120,8 @@ Serial.println(ch3);
 Serial.print("pestsum:");
 Serial.println(pestsum);
 Serial.println("-------------------------");*/
-delay(t);
+
+//Serial.print("byteSend:");
+//Serial.println(byteSend);
+//delay(t);
 }
