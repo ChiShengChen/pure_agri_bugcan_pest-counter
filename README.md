@@ -17,7 +17,8 @@ Arduino_Nano(slave) TO MAX485_modbus_module_1:
 |Arduino_Nano(slave) |MAX485_modbus_module_1|
 | ---------- | -----------|
 | pin_TX1(TX) | pin_DI   |
-| pinRX0(RX)     | 表格单元   |
+| pin_RX0(RX)   | pin_RO  |
+| pin_D3 | pin_DE、pin_RE |
 
 MAX485_modbus_module_1、MAX485_modbus_module_2 connection:   
     
