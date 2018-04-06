@@ -6,6 +6,6 @@ Wiring:
   
 red<--->5V  
 black<--->GND   
-ELSE: 
+ELSE:   
 signalpins<--->digital pin  
   
