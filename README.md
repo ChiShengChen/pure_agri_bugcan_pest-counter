@@ -13,6 +13,7 @@ signalpins<--->digital pin
   
 ## With RS485   
 Arduino_Nano(slave) TO MAX485_modbus_module_1:  
+    
 |Arduino_Nano(slave) |MAX485_modbus_module_1|
 | ---------- | -----------|
 | pin_TX1(TX) | pin_DI   |
@@ -27,6 +28,7 @@ MAX485_modbus_module_1、MAX485_modbus_module_2 connection:
 
 
 MAX485_modbus_module_2 TO Arduino_UNO(master):    
+    
 |MAX485_modbus_module_2|Arduino_UNO(master)|
 |-----------| -----------|
 |表格单元   | 表格单元   |
