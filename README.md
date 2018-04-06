@@ -4,13 +4,24 @@
 with 3 sets of ir sensors   
   
     
-Wiring:
+Wiring:   
+In general:   
 
 |IR_Bugcan|Arduino|
 | ---------- | -----------|
 | red | 5V   |
 |black   | GND   |
 |else signalwires | digital pins  |    
+
+in the RS485 code:    
+    
+|IR_Bugcan|Arduino_Nano|
+| ---------- | -----------|
+| red | 5V   |
+|black   | GND   |
+|blue(channel 1) | pin_D4  | 
+|white(channel 2) | pin_D5  | 
+|yellow(channel 3) | pin_D6  |     
 
 LEDs for debugging:   
     
