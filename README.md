@@ -11,7 +11,11 @@ Wiring:
 | red | 5V   |
 |black   | GND   |
 | signalpins | digital pins  |    
-  
+
+LEDs for debugging:   
+|LED|Arduino|
+|------------|----------------|
+|LEDs| D7、D8、D9|
 
   
 ## With RS485   
