@@ -1,7 +1,7 @@
 # pure_agri_bugcan_pest-counter
 
 ## pure bugcan
-with 3 sets of ir sensors   
+Each with 3 sets of ir sensors.   
   
     
 ### Wiring:   
@@ -32,6 +32,23 @@ LEDs for debugging:
   
 ## With RS485   
 ### Wiring:       
+    
+IR_Bugcan TO  Arduino_Nano(slave):  
+    
+|IR_Bugcan|Arduino_Nano|
+| ---------- | -----------|
+| red | 5V   |
+|black   | GND   |
+|blue(channel 1) | pin_D4  | 
+|white(channel 2) | pin_D5  | 
+|yellow(channel 3) | pin_D6  |     
+
+LEDs for debugging:   
+    
+|LED|Arduino|
+|------------|----------------|
+|LEDs| D7、D8、D9|
+
 Arduino_Nano(slave) TO MAX485_modbus_module_1:  
     
 |Arduino_Nano(slave) |MAX485_modbus_module_1|
