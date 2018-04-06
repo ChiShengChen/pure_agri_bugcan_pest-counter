@@ -14,5 +14,5 @@ signalpins<--->digital pin
 ## With RS485 
   
 Arduino Nano(slave)-----MAX485 modbus module1-----MAX485 modbus module2-----Arduino UNO(master)    
-pinTX1(TX)    
+pin_TX1(TX)<------------>pin_DI   
 pinRX0(RX)    
