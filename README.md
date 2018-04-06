@@ -10,4 +10,8 @@ red<--->5V
 black<--->GND   
 ELSE:   
 signalpins<--->digital pin  
+  
+## With RS485 
   
+Arduino Nano(slave):     MAX485 modbus module:   Arduino UNO(master):    
+pin
