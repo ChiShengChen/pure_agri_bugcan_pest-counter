@@ -19,11 +19,12 @@ signalpins<--->digital pin
 | pinRX0(RX)     | 表格单元   |
 
 MAX485_modbus_module_1、MAX485_modbus_module_2 connection:   
+    
 |MAX485_modbus_module_1|MAX485_modbus_module_2|
 |-----------| -----------|
 |A  | A |
-|B  | B |   
-  
+|B  | B |
+      
 |MAX485_modbus_module_2|Arduino_UNO(master)|
 |-----------| -----------|
 |表格单元   | 表格单元   |
