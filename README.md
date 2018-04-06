@@ -5,11 +5,14 @@ with 3 sets of ir sensors
   
     
 Wiring:
+
+|Arduino_Nano(slave) |IR_Bugcan|
+| ---------- | -----------|
+| red | 5V   |
+|black   | GND   |
+| signalpins | digital pins  |    
   
-red<--->5V  
-black<--->GND   
-ELSE:   
-signalpins<--->digital pin  
+
   
 ## With RS485   
 Arduino_Nano(slave) TO MAX485_modbus_module_1:  
