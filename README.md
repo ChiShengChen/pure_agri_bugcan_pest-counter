@@ -4,7 +4,7 @@
 with 3 sets of ir sensors   
   
     
-Wiring:   
+### Wiring:   
 In general:   
 
 |IR_Bugcan|Arduino|
