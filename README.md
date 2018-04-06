@@ -6,7 +6,7 @@ with 3 sets of ir sensors
     
 Wiring:
 
-|Arduino_Nano(slave) |IR_Bugcan|
+|IR_Bugcan|Arduino_Nano|
 | ---------- | -----------|
 | red | 5V   |
 |black   | GND   |
