@@ -13,6 +13,7 @@ Wiring:
 | signalpins | digital pins  |    
 
 LEDs for debugging:   
+    
 |LED|Arduino|
 |------------|----------------|
 |LEDs| D7、D8、D9|
