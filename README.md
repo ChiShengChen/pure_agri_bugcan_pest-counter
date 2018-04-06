@@ -40,5 +40,6 @@ MAX485_modbus_module_2 TO Arduino_UNO(master):
     
 |MAX485_modbus_module_2|Arduino_UNO(master)|
 |-----------| -----------|
-|表格单元   | 表格单元   |
-|表格单元   | 表格单元   |
+|pin_DI   | pin_11   |
+|pin_RO   | pin_10   |
+|pin_DE、pin_RE| pin_3|
