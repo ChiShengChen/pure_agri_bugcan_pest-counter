@@ -10,7 +10,7 @@ Wiring:
 | ---------- | -----------|
 | red | 5V   |
 |black   | GND   |
-| signalpins | digital pins  |    
+|else signalwires | digital pins  |    
 
 LEDs for debugging:   
     
