@@ -1,7 +1,7 @@
 /*      Master      */
 //forked from
 //https://www.arduino.cn/thread-47862-1-1.html
-//for nano
+//for uno
 #include <SoftwareSerial.h>
 SoftwareSerial Master(10, 11); 
 char val; 
