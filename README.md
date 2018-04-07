@@ -48,7 +48,7 @@ LEDs for debugging:
 |LED|Arduino|
 |------------|----------------|
 |LEDs for bugcan debugging| D7(ch1)、D8(ch2)、D9(ch3)|
-|LEDs for RS485 debugging| D12|   
+|LED for RS485 debugging| D12|   
 
 Arduino_Nano(slave) TO MAX485_modbus_module_1:  
     
