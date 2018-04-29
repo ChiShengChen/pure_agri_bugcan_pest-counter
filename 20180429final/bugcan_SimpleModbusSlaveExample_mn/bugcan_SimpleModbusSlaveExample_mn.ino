@@ -73,7 +73,7 @@ unsigned int holdingRegs[TOTAL_REGS_SIZE]; // function 3 and 16 register array
 //ir沒遮斷 == HIGH
 int bcc1 = 4;
 int bcc2 = 5;
-int bcc3 = 7;
+int bcc3 = 8;
 int LED1 = 13;
 int LED2 = 12;
 int LED3 = 11;
@@ -138,7 +138,7 @@ void loop()
     ch2++;
   }
 
-  if (digitalRead(bcc3) == HIGH)
+/*  if (digitalRead(bcc3) == HIGH)
   {
     mode3 = 1;
     digitalWrite(LED3, HIGH);
@@ -148,17 +148,17 @@ void loop()
     mode3 = 0;
     digitalWrite(LED3, LOW);
     ch3++;
-  }
+  }*/
 
   pestNum = ch1 + ch2 + ch3;
     
-  Serial.print("ch1:");
+/*  Serial.print("ch1:");
   Serial.println(ch1);
   Serial.print("ch2:");
   Serial.println(ch2);
   Serial.print("ch3:");
   Serial.println(ch3);
-  Serial.println("-------------------------");
+  Serial.println("-------------------------");*/
   delay(t);
   
   ////////////////////////////////////////////////////////////
@@ -173,9 +173,6 @@ void loop()
     holdingRegs[i] = analogRead(i);
     delayMicroseconds(50);	     
   }*/
-
-
-
 
   ////////////////////resetLED-BUTTON////////////////////////////
   byte buttonState = digitalRead(buttonPin); // read button states
