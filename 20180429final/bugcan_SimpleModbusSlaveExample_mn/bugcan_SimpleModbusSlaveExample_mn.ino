@@ -71,9 +71,9 @@ unsigned int holdingRegs[TOTAL_REGS_SIZE]; // function 3 and 16 register array
 ////////////////////////////////////////////////////////////
 /////////////////蟲罐////////////////////
 //ir沒遮斷 == HIGH
-int bcc1 = 4;
-int bcc2 = 5;
-int bcc3 = 8;
+int bcc1 = 4;  //B
+int bcc2 = 5;  //W
+int bcc3 = 6;  //Y
 int LED1 = 13;
 int LED2 = 12;
 int LED3 = 11;
