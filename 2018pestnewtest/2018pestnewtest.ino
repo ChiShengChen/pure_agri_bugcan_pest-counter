@@ -1,7 +1,7 @@
 //ir沒遮斷 == HIGH
 int bcc1 = 4;
 int bcc2 = 5;
-int bcc3 = 7;
+int bcc3 = 6;
 int LED1 = 13;
 int LED2 = 12;
 int LED3 = 11;

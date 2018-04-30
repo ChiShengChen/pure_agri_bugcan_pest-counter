@@ -74,7 +74,7 @@ unsigned int holdingRegs[TOTAL_REGS_SIZE]; // function 3 and 16 register array
 int bcc1 = 4;  //B
 int bcc2 = 5;  //W
 int bcc3 = 6;  //Y
-int LED1 = 13;
+int LED1 = 10;
 int LED2 = 12;
 int LED3 = 11;
 int ch1, ch2, ch3, pestNum = 0;
@@ -106,7 +106,7 @@ void setup()
  pinMode(LED1, OUTPUT);
  pinMode(LED2, OUTPUT);
  pinMode(LED3, OUTPUT);
- Serial.begin(9600);
+ //Serial.begin(9600);
 }
 
 void loop()
@@ -138,7 +138,7 @@ void loop()
     ch2++;
   }
 
-/*  if (digitalRead(bcc3) == HIGH)
+  if (digitalRead(bcc3) == HIGH)
   {
     mode3 = 1;
     digitalWrite(LED3, HIGH);
@@ -148,7 +148,7 @@ void loop()
     mode3 = 0;
     digitalWrite(LED3, LOW);
     ch3++;
-  }*/
+  }
 
   pestNum = ch1 + ch2 + ch3;
     
