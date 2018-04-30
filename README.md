@@ -78,3 +78,6 @@ MAX485_modbus_module_2 TO Arduino_UNO(master):
 |VCC|5V|
 |GND|GND|
 
+## rs485 Modbus lib in 20180429final
+
+https://github.com/angeloc/simplemodbusng
