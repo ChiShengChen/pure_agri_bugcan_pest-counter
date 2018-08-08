@@ -2,6 +2,8 @@
 
 ## pure bugcan
 Each with 3 sets of ir sensors.   
+
+![image](https://github.com/ChiShengChen/pure_agri_bugcan_pest-counter/raw/master/bc2.jpg)
   
     
 ### Wiring:   
